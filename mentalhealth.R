@@ -1,24 +1,27 @@
-setwd("C:\\Users\\Shivani\\Desktop\\regression")
-
+#import libraries 
 library(foreign)
 library(calibrate)
 library(anchors)
 
+#import data set
 mySASData <- read.xport('mentalhealth.xpt')
 
 sink("mentalhealth.txt") ### SENDING THE OUTPUT TO FILE IN THE DIRECTORY 
 
+#clean data set 
 cat("replace 9/99/9.9999 values with NA\n\n")
 mySASData = replace.value(mySASData, c("ABSTINEN","RESOURCE","COPING","SUPPORT","HOMEWORK","COPING","THERAP1","HANDOUT1","QUOTAT1","EXERCIS1","SEXUAL","PHYSICAL","REPEATED","GROUP","RELAPSE3"), from=9, to=NA, verbose = FALSE)
 mySASData = replace.value(mySASData, c("TOTALA","TOTALB","TOTALC","TRAGE"), from=99, to=NA, verbose = FALSE)
 mySASData = replace.value(mySASData, c("T2ETOH","T2DRUG","T3ETOH","T3DRUG"), from=9.9999, to=NA, verbose = FALSE)
 
+#replace missing values with median values
 cat("replace NA with median\n\n")
 for (i in colnames(mySASData)){
   median_value = lapply(mySASData[i], median, na.rm = TRUE)
   mySASData = replace.value(mySASData, i, from=NA, to=median_value, verbose = FALSE)
 }
 
+#limit working data set columns to those of interest
 my_data <- mySASData[, c("PRISON","ABSTINEN", "RESOURCE", "COPING", "SUPPORT" , "HOMEWORK" , "THERAP1" , "HANDOUT1" , "QUOTAT1" , "EXERCIS1" , "TOTALA" , "TOTALB" , "TOTALC" , "TRAGE" , "SEXUAL" , "PHYSICAL", "REPEATED" , "GROUP" , "RELAPSE3" , "T2ETOH" , "T2DRUG" , "T3ETOH" , "T3DRUG")]
 # print the first 6 rows
 #head(my_data, 6)
