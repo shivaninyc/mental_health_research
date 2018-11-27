@@ -14,7 +14,7 @@ The study involves 29 females who are part of a controlled experiment of Incarce
 2. Control group (do not receive any medical treatment)
 3. Non randomized-open trial
 
-The data set contains 22 attributes and missing values are denoted by value 99 or 9.
+The data set contains 23 attributes and missing values are denoted by value 99 or 9.
 
 Steps I took: 
 * Filled in missing values with the median value of rest of data pts
