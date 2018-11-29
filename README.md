@@ -21,6 +21,16 @@ The study involves 29 females who are part of a controlled experiment of Incarce
 
 The data set contains 23 attributes and missing values are denoted by value 99 or 9.
 
+## Structure of this repo
+
+```
+.
+├── mentalhealth.xpt [data input]
+├── mentalhealth.R [linear regression model analysis]
+├── mentalhealth.txt [output from R script]
+   
+```
+
 ## Steps I took
 * Filled in missing values with the median value of rest of data pts
 * Narrowed down to 23 attributes based on background knowledge of
