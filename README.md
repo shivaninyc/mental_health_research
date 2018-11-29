@@ -1,4 +1,6 @@
 # mental_health_research
+[![license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/shivaninyc/mental_health_research/blob/master/LICENSE)
+
 Regression Research on Mental Health Data
 
 The purpose of this research is:
