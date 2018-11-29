@@ -10,6 +10,8 @@ To better understand how we can improve the way we treat incarcerated women with
 To predict whether an incarcerated women with PTSD and SUD is likely to return to jail or not.
 
 ## Input Data Set
+Data From: https://www.icpsr.umich.edu/icpsrweb/ICPSR/studies/3416#
+
 The study involves 29 females who are part of a controlled experiment of Incarcerated Women With Substance Use Disorder and Post-Traumatic Stress Disorder in Providence, Rhode Island
 
 29 females are a combination of 3 groups
