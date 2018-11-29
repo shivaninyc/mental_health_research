@@ -6,7 +6,7 @@ Regression Research on Mental Health Data
 ## Purpose of this research
 To better understand how we can improve the way we treat incarcerated women with PTSD and SUD to reduce total number of offenses.
 
-## Goal of this regression study: 
+## Goal of this regression study
 To predict whether an incarcerated women with PTSD and SUD is likely to return to jail or not.
 
 ## Input Data Set
@@ -19,7 +19,7 @@ The study involves 29 females who are part of a controlled experiment of Incarce
 
 The data set contains 23 attributes and missing values are denoted by value 99 or 9.
 
-## Steps I took: 
+## Steps I took
 * Filled in missing values with the median value of rest of data pts
 * Narrowed down to 23 attributes based on background knowledge of
 psychology, PTSD, SUD and seeking safety
@@ -28,7 +28,7 @@ to get rid of multicollinearity
 * Built the model using forward, backward and stepwise selection.
 * Ran the Cook’s D and DFFITS with my final model to find and remove outliers
 
-## Conclusion: 
+## Conclusion
 Final Model:
 PRISON = -1.71867*HOMEWORK - 0.06635*TOTALB
 
