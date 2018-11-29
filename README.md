@@ -3,8 +3,8 @@
 
 Regression Research on Mental Health Data
 
-The purpose of this research is:
- To better understand how we can improve the way we treat incarcerated women with PTSD and SUD to reduce total number of offenses.
+##The purpose of this research is:
+* To better understand how we can improve the way we treat incarcerated women with PTSD and SUD to reduce total number of offenses.
 
 The goal of this regression study: 
 To predict whether an incarcerated women with PTSD and SUD is likely to return to jail or not.
