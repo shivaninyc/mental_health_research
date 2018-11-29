@@ -30,6 +30,14 @@ to get rid of multicollinearity
 * Built the model using forward, backward and stepwise selection.
 * Ran the Cook’s D and DFFITS with my final model to find and remove outliers
 
+## Outliers Plots
+### Cook's D
+<img src="cooksd.png">
+
+### DFFITS
+<img src="dffits.png">
+
+
 ## Conclusion
 Final Model:
 PRISON = -1.71867*HOMEWORK - 0.06635*TOTALB
