@@ -31,6 +31,7 @@ to get rid of multicollinearity
 * Ran the Cook’s D and DFFITS with my final model to find and remove outliers
 
 ## Outliers Plots
+Points 14 and 26 were found to be outliers and removed from the model. 
 ### Cook's D
 <img src="cooksd.png">
 
