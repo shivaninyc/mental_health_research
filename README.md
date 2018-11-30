@@ -50,7 +50,7 @@ Points 14 and 26 were found to be outliers and removed from the model.
 
 
 ## Conclusion
-* Final Model: PRISON = -1.71867*HOMEWORK - 0.06635*TOTALB
+* Final Model: PRISON = -1.71867 * HOMEWORK - 0.06635 * TOTALB
 * Higher HOMEWORK and TOTALB indicate better mental health
 * Negatively correlated with PRISON (higher PRISON means more likely to return to jail quickly)
 * Mental health treatment is important to reduce total number of offenses
